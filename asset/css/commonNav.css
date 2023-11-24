@@ -1,0 +1,17 @@
+nav{
+    padding: 0.25cm;
+    width: calc(100% - 0.5cm);
+    height: 2cm;
+
+    background-color: var(--Second);
+    box-shadow: 0 0 0.5cm black;
+}
+ul.dropdown{
+    list-style-type: none;
+    position: absolute;
+    opacity: 1;
+    transition:opacity 0.5s ;
+}
+ul.hidden{
+    opacity: 0;
+}

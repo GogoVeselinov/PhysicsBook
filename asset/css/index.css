@@ -1,0 +1,14 @@
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Third);
+}
+:root{
+    /*Палитра */
+    --First:#2f3a6b;
+    --Second:#22313f;
+    --Third:#34495e;
+}
