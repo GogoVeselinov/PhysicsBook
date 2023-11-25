@@ -1,17 +1,69 @@
 nav{
-    padding: 0.25cm;
+    /* Самото навигационно меню */
+    display: flex;
+    justify-content: center;
+
     width: calc(100% - 0.5cm);
     height: 2cm;
+    padding: 0.25cm;
 
     background-color: var(--Second);
     box-shadow: 0 0 0.5cm black;
 }
-ul.dropdown{
+div.dropdown-container{
+    /* Позицията на бутоните в навигационното меню */
+    text-align: center;
+    width: 3.52cm;
+    padding: 0.5cm;
+}
+button.dropdown-toggle{
+    /* Това е бутона! */
+    text-align: center;
+    font-size: x-large;
+    
+    background-color: var(--Fourth);
+    box-shadow: 0 0 0.215cm black;
+    
+    width: 3.52cm;
+    height:1cm;
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
+    
+    border-style: none;
+    border-radius: 0.2cm;
+    transition: background-color 0.5s;
+}
+ul.dropdown-menu{
+    /* Когато менюто е спуснато */
     list-style-type: none;
-    position: absolute;
-    opacity: 1;
-    transition:opacity 0.5s ;
+
+    padding: 0.25cm;
+    width: 3.02cm;
+
+    background-color: var(--Fourth);
+    border-style: none;
+    border-radius: 0.2cm;
+    transition: opacity 0.25s;
 }
 ul.hidden{
+    /* Когато менюто е скрито */
     opacity: 0;
+}   
+button.dropdown-toggle:hover{
+    /* Когато мишката е ВЪРХУ бутона */
+    background-color: var(--Btnhover);
 }
+li.clickable:hover{
+    /* Текста в drop-down менюто когато мишката е отгоре*/
+    cursor: default;
+    font-size: x-large;
+
+    background-color: var(--Btnhover);
+    border-radius: 0.25cm;
+}
+li.clickable{
+    /* Текста в drop-down менюто*/
+    font-size: large;
+    transition: all 0.125s ;
+}
+

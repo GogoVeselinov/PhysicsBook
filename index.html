@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" href="icon.ico">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website-Physics1.0</title>
+    <title>Website-Physics</title>
 
     <link rel="stylesheet" href="asset/css/index.css"> <!-- Дизайн за index.html -->
     <link rel="stylesheet" href="asset/css/commonNav.css"> <!-- Общия дизайн за навигационното меню -->
 </head>
 <body>
     <nav>
-        <div>
-            <button class="dropdown" onclick='$("#home-dropdown").toggleClass("hidden");'>Home</button>
-            <ul class="dropdown hidden" id="home-dropdown">
-                <li>Info</li>
-                <li>Our project</li>
-                <li>About us</li>
+        <div class="dropdown-container">
+            <button class="dropdown-toggle" onclick='$("#home-dropdown").toggleClass("hidden");'>Начало ▼</button>
+            <ul class="dropdown-menu hidden" id="home-dropdown">
+                <li class="clickable">За проекта</li>
+                <li class="clickable" onclick = "window.location.href='/asset/html/aboutus.html'">За нас</li>
+                <li class="clickable">Credits</li>
             </ul>
         </div>
+        <div class="dropdown-container">
+            <button class="dropdown-toggle">Учебник</button>
+        </div>
+        <div class="dropdown-container">
+            <button class="dropdown-toggle">За нас</button>
+        </div>
+
     </nav>
 </body>
 </html>

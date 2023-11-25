@@ -6,9 +6,16 @@ body{
     padding: 0;
     background-color: var(--Third);
 }
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 :root{
     /*Палитра */
     --First:#2f3a6b;
     --Second:#22313f;
     --Third:#34495e;
+    --Fourth:#9fd3c7;
+    --Btnhover:#d3f2eb;
+    --btnshadow:#f0e0e4;
 }
+    
