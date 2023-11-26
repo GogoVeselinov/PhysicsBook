@@ -1,0 +1,72 @@
+;           /* Chat-GPT cooked here 👩‍🍳👨‍🍳🍳 */
+
+@-webkit-keyframes img1-in {
+    0% {
+      -webkit-transform: scale(0.90);
+      transform: scale(0.90);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }}
+@keyframes img1-in {
+    0% {
+      -webkit-transform: scale(0.90);
+      transform: scale(0.90);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+}
+@-webkit-keyframes img1-out {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.90);
+      transform: scale(0.90);
+    }
+}
+@keyframes img1-out {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.90);
+      transform: scale(0.90);
+    }
+}
+  .img1 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.img1:hover,.img1:focus,.img1:active {
+    -webkit-animation-name: img1-in;
+    animation-name: img1-in;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.img1:not(:hover) {
+    -webkit-animation-name: img1-out;
+    animation-name: img1-out;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}

@@ -10,12 +10,26 @@
 
     <link rel="stylesheet" href="../css/index.css"> <!-- Дизайн за index.html -->
     <link rel="stylesheet" href="../css/commonNav.css"> <!-- Общия дизайн за навигационното меню -->
-    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../css/aboutus.css">  <!-- Дизайн за aboutus.html -->
+    <link rel="stylesheet" href="../css/animation.css"> <!-- Анимацията за HOME бутона -->
 </head>
 <body>
     <nav>
-
+        <img src="../media/Logo.jpg" class="img1" style="width: 10%;" onclick = "window.location.href='../../../index.html'">
+        <div class="dropdown-container">
+            <button class="dropdown-toggle" onclick='$("#home-dropdown").toggleClass("hidden");'>Начало ▼</button>
+            <ul class="dropdown-menu hidden" id="home-dropdown">
+                <li class="clickable">За проекта</li>
+                <li class="clickable textdistance" onclick = "window.location.href='/asset/html/aboutus.html'">За нас</li>
+                <li class="clickable textdistance">Credits</li>
+            </ul>
+        </div>
+        <div class="dropdown-container">
+            <button onclick="window.location.href='/asset/html/studentbook.html'" class="dropdown-toggle">Учебник</button>
+        </div>
+        <div class="dropdown-container">
+            <button class="dropdown-toggle">За нас</button>
+        </div>
     </nav>
-
 </body>
 </html>

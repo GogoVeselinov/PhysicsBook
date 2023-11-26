@@ -30,7 +30,7 @@ button.dropdown-toggle{
     padding-right: 0.25cm;
     
     border-style: none;
-    border-radius: 0.2cm;
+    border-radius: 1.5cm;
     transition: background-color 0.5s;
 }
 ul.dropdown-menu{
@@ -42,7 +42,7 @@ ul.dropdown-menu{
 
     background-color: var(--Fourth);
     border-style: none;
-    border-radius: 0.2cm;
+    border-radius: 0.5cm;
     transition: opacity 0.25s;
 }
 ul.hidden{
@@ -56,14 +56,24 @@ button.dropdown-toggle:hover{
 li.clickable:hover{
     /* Текста в drop-down менюто когато мишката е отгоре*/
     cursor: default;
-    font-size: x-large;
+    font-size: 22px;
 
     background-color: var(--Btnhover);
     border-radius: 0.25cm;
 }
 li.clickable{
     /* Текста в drop-down менюто*/
-    font-size: large;
+    font-style: bold;
+    font-size: 20px;
     transition: all 0.125s ;
 }
-
+li.textdistance{
+    /* Това е разстоянието между редовете */
+    margin-top: 0.25cm;
+}
+img.img1{
+    /* Дизайн за HOME бутона */
+    box-shadow: 0 0 0.5cm black;
+    border-radius: 1.5cm;
+}
+  
