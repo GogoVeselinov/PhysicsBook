@@ -13,19 +13,19 @@ nav{
 div.dropdown-container{
     /* Позицията на бутоните в навигационното меню */
     text-align: center;
-    width: 3.52cm;
-    padding: 0.5cm;
+    width: 3.8cm;
+    padding: 0.4cm;
 }
 button.dropdown-toggle{
-    /* Това е бутона! */
+    /* Това са бутоните! */
     text-align: center;
     font-size: x-large;
     
-    background-color: var(--Fourth);
+    background-color: var(--Button);
     box-shadow: 0 0 0.215cm black;
     
-    width: 3.52cm;
-    height:1cm;
+    width: 3.8cm;
+    height:1.2cm;
     padding-left: 0.25cm;
     padding-right: 0.25cm;
     
@@ -38,12 +38,14 @@ ul.dropdown-menu{
     list-style-type: none;
 
     padding: 0.25cm;
-    width: 3.02cm;
+    width: 3.5cm;
 
-    background-color: var(--Fourth);
+    border-radius: 0.4cm;
+
+    box-shadow: 0 0 0.215cm black;
+    background-color: var(--Button);
     border-style: none;
-    border-radius: 0.5cm;
-    transition: opacity 0.25s;
+    transition: opacity 0.25s;  
 }
 ul.hidden{
     /* Когато менюто е скрито */
@@ -71,9 +73,23 @@ li.textdistance{
     /* Това е разстоянието между редовете */
     margin-top: 0.25cm;
 }
-img.img1{
+img.homeimg {
     /* Дизайн за HOME бутона */
+    position: absolute;
+    aspect-ratio: 2 / 1;
+
+    top: 0.45cm;
+    left: 0.45cm;
+    height: 1.6cm;
+    
+    background-color: var(--Button);
     box-shadow: 0 0 0.5cm black;
     border-radius: 1.5cm;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+img.homeimg:hover{
+    opacity: 0.9;
+}
+
   

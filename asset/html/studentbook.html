@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="icon" href="icon.ico">
+    <link rel="icon" href="../../icon.ico">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website-Physics</title>
 
     <link rel="stylesheet" href="../css/index.css"> <!-- Дизайн за index.html -->
+    <link rel="stylesheet" href="../css/studentbook.css"> <!-- Дизайн за studentbook.html -->
     <link rel="stylesheet" href="../css/commonNav.css"> <!-- Общия дизайн за навигационното меню -->
     <link rel="stylesheet" href="../css/animation.css"> <!-- Анимацията за HOME бутона -->
 </head>
 <body>
+    <img src="../media/Logo.png" class="homeimg" onclick = "window.location.href='../../index.html'">
     <nav>
-        <img src="../media/Logo.jpg" class="img1" style="width: 10%;" onclick = "window.location.href='../../../index.html'">
         <div class="dropdown-container">
-            <button class="dropdown-toggle" onclick='$("#home-dropdown").toggleClass("hidden");'>Начало ▼</button>
+            <button onclick="window.location.href='studentbook.html'" class="dropdown-toggle" >Учебник</button>
+        </div>
+        <div class="dropdown-container">
+            <button class="dropdown-toggle" onclick="window.location.href='calculator.html'">Калкулатор</button>
+        </div>
+        <div class="dropdown-container">
+            <button class="dropdown-toggle" onclick='$("#home-dropdown").toggleClass("hidden");'>Други</button>
             <ul class="dropdown-menu hidden" id="home-dropdown">
-                <li class="clickable">За проекта</li>
-                <li class="clickable textdistance" onclick = "window.location.href='/asset/html/aboutus.html'">За нас</li>
-                <li class="clickable textdistance">Credits</li>
+                <li class="clickable" onclick="window.location.href='projectinfo.html'">За проекта</li>
+                <li class="clickable textdistance" onclick = "window.location.href='aboutus.html'">За нас</li>
+                <li class="clickable textdistance" onclick = "window.location.href='contacts.html'">Контакти</li>
             </ul>
-        </div>
-        <div class="dropdown-container">
-            <button onclick="window.location.href='/asset/html/studentbook.html'" class="dropdown-toggle" >Учебник</button>
-        </div>
-        <div class="dropdown-container">
-            <button class="dropdown-toggle">За нас</button>
         </div>
     </nav>
 </body>
