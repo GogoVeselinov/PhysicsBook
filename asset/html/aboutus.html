@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" href="../../icon.ico">
 
     <meta charset="UTF-8">
@@ -11,24 +13,62 @@
     <link rel="stylesheet" href="../css/index.css"> <!-- Дизайн за index.html -->
     <link rel="stylesheet" href="../css/aboutus.css">  <!-- Дизайн за aboutus.html -->
     <link rel="stylesheet" href="../css/commonNav.css"> <!-- Общия дизайн за навигационното меню -->
-    <link rel="stylesheet" href="../css/animation.css"> <!-- Анимацията за HOME бутона -->
 </head>
-<body>
-    <img src="../media/Logo.png" class="homeimg" onclick = "window.location.href='../../index.html'">
-    <nav>
-        <div class="dropdown-container">
-            <button onclick="window.location.href='studentbook.html'" class="dropdown-toggle" >Учебник</button>
-        </div>
-        <div class="dropdown-container">
-            <button class="dropdown-toggle" onclick="window.location.href='calculator.html'">Калкулатор</button>
-        </div>
-        <div class="dropdown-container">
-            <button class="dropdown-toggle" onclick='$("#home-dropdown").toggleClass("hidden");'>Други</button>
-            <ul class="dropdown-menu hidden" id="home-dropdown">
-                <li class="clickable" onclick="window.location.href='projectinfo.html'">За проекта</li>
-                <li class="clickable textdistance" onclick = "window.location.href='aboutus.html'">За нас</li>
-                <li class="clickable textdistance" onclick = "window.location.href='contacts.html'">Контакти</li>
-            </ul>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand text-white" href="../../index.html">PhysicsBook</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="../html/studentbook.html" aria-current="page"
+                            >Учебник
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/asset/html/calculator.html">Калкулатор</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle text-white"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Други</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >   
+                            <a class="dropdown-item text-white" href="/asset/html/aboutus.html"
+                                >За нас</a
+                            >
+                            <a class="dropdown-item text-white" href="/asset/html/projectinfo.html"
+                                >За проекта</a
+                            >
+                            <a class="dropdown-item text-white" href="/asset/html/contacts.html"
+                                >Контакти</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+
+                </form>
+            </div>
         </div>
     </nav>
 </body>

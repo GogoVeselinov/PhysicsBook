@@ -1,95 +1,48 @@
-nav{
-    /* Самото навигационно меню */
-    display: flex;
-    justify-content: center;
-
-    width: calc(100% - 0.5cm);
-    height: 2cm;
-    padding: 0.25cm;
-
+nav.navbar{
     background-color: var(--Second);
-    box-shadow: 0 0 0.5cm black;
-}
-div.dropdown-container{
-    /* Позицията на бутоните в навигационното меню */
-    text-align: center;
-    width: 3.8cm;
-    padding: 0.4cm;
-}
-button.dropdown-toggle{
-    /* Това са бутоните! */
-    text-align: center;
-    font-size: x-large;
-    
-    background-color: var(--Button);
-    box-shadow: 0 0 0.215cm black;
-    
-    width: 3.8cm;
-    height:1.2cm;
-    padding-left: 0.25cm;
-    padding-right: 0.25cm;
-    
-    border-style: none;
-    border-radius: 1.5cm;
-    transition: background-color 0.5s;
-}
-ul.dropdown-menu{
-    /* Когато менюто е спуснато */
-    list-style-type: none;
+    height: 2cm;
 
-    padding: 0.25cm;
-    width: 3.5cm;
-
-    border-radius: 0.4cm;
-
-    box-shadow: 0 0 0.215cm black;
-    background-color: var(--Button);
-    border-style: none;
-    transition: opacity 0.25s;  
+    box-shadow: 2px 1px 10px;
 }
-ul.hidden{
-    /* Когато менюто е скрито */
-    opacity: 0;
-}   
-button.dropdown-toggle:hover{
-    /* Когато мишката е ВЪРХУ бутона */
-    background-color: var(--Btnhover);
+div.container{
+    background-color: var(--Second);
 }
-li.clickable:hover{
-    /* Текста в drop-down менюто когато мишката е отгоре*/
-    cursor: default;
-    font-size: 22px;
-
-    background-color: var(--Btnhover);
+div.dropdown-menu{
+    background-color: var(--SideNav);
+}
+a.dropdown-item:hover{
+    background-color: var(--texthover);
+}
+a.dropdown-item:hover{
+    transition: all 0.155s !important;
+    background-color: var(--texthover);
+    border-radius: 0.125cm;
+    border-bottom-right-radius: 0.2cm;
+    font-size: 17.5px !important;
+}
+li.nav-item{
+    padding: 0.1125cm;
+}
+li.nav-item:hover {
+    transition: all 0.155s !important;
+    background-color: var(--texthover);
     border-radius: 0.25cm;
 }
-li.clickable{
-    /* Текста в drop-down менюто*/
-    font-style: bold;
-    font-size: 20px;
-    transition: all 0.125s ;
+div.container{
+    display: flex;
+    justify-content: center;
 }
-li.textdistance{
-    /* Това е разстоянието между редовете */
-    margin-top: 0.25cm;
+button.navbar-toggler:focus {
+    border: 0 !important;
+    box-shadow: none !important;
 }
-img.homeimg {
-    /* Дизайн за HOME бутона */
-    position: absolute;
-    aspect-ratio: 2 / 1;
-
-    top: 0.45cm;
-    left: 0.45cm;
-    height: 1.6cm;
-    
-    background-color: var(--Button);
-    box-shadow: 0 0 0.5cm black;
-    border-radius: 1.5cm;
-    background-size: contain;
-    background-repeat: no-repeat;
+button.navbar-toggler{
+    border: 0 !important;
+    box-shadow: none !important;
 }
-img.homeimg:hover{
-    opacity: 0.9;
+@media only screen and (max-width: 550px){
+    a.nav-link:hover {
+        transition: all 0.25s;
+        font-size: 17px !important;
+    }
 }
-
-  

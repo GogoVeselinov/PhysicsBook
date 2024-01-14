@@ -1,0 +1,36 @@
+select.formula-container{
+    /*Дизайн на Dropdown менюто*/
+    width: 10cm;
+    height: 1.5cm;
+    text-align: center;
+}
+
+div.dropdownDiv{
+    /*Дизайн на контайнера на Dropdown менюто*/
+    margin-top: 5cm;
+    text-align: center;
+}
+
+div.calcTextboxDiv {
+    /*Дизайн на контейнера на текстовите полета*/
+    margin-top:1.5cm;
+    text-align: center;
+}
+
+div.calcSubmitDiv {
+    /*Дизайн на контейнера на бутона за изчисление*/
+    margin-top:0.5cm;
+    text-align: center;
+}
+
+input.calcTextbox {
+    /*Дизайн на текстово поле*/
+    width: 3cm;
+    height: 0.7cm
+}
+
+button.calcSubmitButton{
+    /*Дизайн на бутон за изчисление*/
+    width: 3.5cm;
+    height: 0.7cm;
+}
