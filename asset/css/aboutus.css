@@ -1,0 +1,23 @@
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+nav.navbar {
+    z-index: 999;
+}
+div.card-container {
+    display: flex;
+    justify-content:space-around;
+    margin: 0.25cm;
+    padding: 0.25cm;
+}
+div.card {
+    background-color: var(--CardClr);
+    box-shadow: 4px 2px 12px;
+}
+img.img-fluid{
+    display: flex;
+    justify-content:center;
+}

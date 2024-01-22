@@ -1,0 +1,16 @@
+div.container-fluid{
+    display: flex;
+    justify-content: center;
+
+    padding: 0.25cm;
+    width: calc(100% - 20%);
+
+    background-color: var(--CardClr);
+    border-radius: 0.25cm;
+}
+p.Text{
+    text-align:justify;
+    margin: 0.25cm;
+    font-size: large;
+    color: black;
+}

@@ -1,3 +1,9 @@
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 nav.navbar{
     background-color: var(--Second);
     height: 2cm;
@@ -40,9 +46,17 @@ button.navbar-toggler{
     border: 0 !important;
     box-shadow: none !important;
 }
-@media only screen and (max-width: 550px){
-    a.nav-link:hover {
-        transition: all 0.25s;
-        font-size: 17px !important;
-    }
+footer{
+    bottom: 0;
+    width: var(100% - 5cm);
+    height: var(100% - 2cm);
+    background-color: var(--Second);
+    padding: 0.25cm;
+    box-shadow: 2px 1px 10px;
+}   
+div.section-container{
+    background-color: var(--Second);
+}
+a.text-reset, p{
+    color: var(--textclr) !important;
 }
