@@ -1,15 +1,9 @@
-* {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 nav.navbar {
     z-index: 999;
 }
 div.card-container {
-    display: flex;
-    justify-content:space-around;
+    display:flex;
+    justify-content:space-between;
     margin: 0.25cm;
     padding: 0.25cm;
 }
