@@ -1,0 +1,25 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Third);
+}
+* {
+  font-family: Arial, Helvetica, sans-serif !important; 
+}
+:root {
+  /*Палитра */
+  --First: #2f3a6b;
+  --Second: #22313f;
+  --Third: #34495e;
+  --SideNav:#455f79;
+  --textclr:#fff8f8f1;
+  --texthover:#fffafa41;
+  --Fourth: #9fd3c7;
+  --Button: #36fde963;
+  --Btnhover: #4cbbb0;
+  --btnshadow: #f0e0e4;
+  --CardClr: #407088;
+}

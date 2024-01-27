@@ -1,0 +1,114 @@
+/* Disable text selection */
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+body {
+    -ns-overflow-width: none;
+    scrollbar-width: none;
+}
+
+/* Style for navbar */
+nav.navbar {
+    background-color: var(--Second);
+    height: 2cm;
+    box-shadow: 2px 1px 10px; /* Add box shadow */
+}
+
+/* Style for container */
+div.container {
+    background-color: var(--Second);
+}
+
+/* Style for dropdown menu */
+div.dropdown-menu {
+    background-color: var(--SideNav);
+}
+
+/* Hover effect for dropdown items */
+a.dropdown-item:hover {
+    background-color: var(--texthover);
+}
+
+/* Hover effect for dropdown items with transition */
+a.dropdown-item:hover {
+    transition: all 0.155s !important;
+    background-color: var(--texthover);
+    border-radius: 0.125cm;
+    border-bottom-right-radius: 0.2cm;
+    font-size: 17.5px !important;
+}
+
+/* Style for navbar items */
+li.nav-item {
+    padding: 0.1125cm;
+}
+
+/* Hover effect for navbar items */
+li.nav-item:hover {
+    transition: all 0.155s !important;
+    background-color: var(--texthover);
+    border-radius: 0.25cm;
+}
+
+/* Center the content in the container */
+div.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Remove focus styling for navbar toggler */
+button.navbar-toggler:focus {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Remove border and box-shadow for navbar toggler */
+button.navbar-toggler {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Style for footer */
+footer {
+    bottom: 0;
+    width: var(100%);
+    height: var(100% - 5cm);
+    background-color: var(--Second);
+    box-shadow: 2px 1px 10px;
+    padding: 0.5cm;
+    margin-top: 20cm; /* Adjust margin */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    footer {
+        bottom: 0;
+        width: var(100%);
+        height: var(100% - 5cm);
+        background-color: var(--Second);
+        box-shadow: 2px 1px 10px;
+        padding: 0.5cm;
+        margin-top: 5cm; /* Adjust margin */
+    }
+}
+
+/* Style for section container */
+div.section-container {
+    background-color: var(--Second);
+}
+
+/* Style for anchor tags and paragraphs */
+a.text-reset, p {
+    color: var(--textclr) !important;
+    text-decoration: none;
+}

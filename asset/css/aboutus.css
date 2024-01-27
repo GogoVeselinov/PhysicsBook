@@ -1,0 +1,24 @@
+/* Adjust z-index for navbar */
+nav.navbar {
+    z-index: 999; /* Ensure navbar stays on top */
+}
+
+/* Style for container of cards */
+div.card-container {
+    display: flex; /* Use flexbox to arrange cards */
+    justify-content: space-between; /* Space cards evenly */
+    margin: 0.25cm;
+    padding: 0.25cm;
+}
+
+/* Style for individual cards */
+div.card {
+    background-color: var(--CardClr); /* Set background color */
+    box-shadow: 4px 2px 12px; /* Add box shadow for depth */
+}
+
+/* Center images horizontally within their container */
+img.img-fluid {
+    display: flex;
+    justify-content: center;
+}

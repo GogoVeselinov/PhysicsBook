@@ -1,0 +1,47 @@
+/* Adjust z-index for navbar */
+nav.navbar {
+    z-index: 999; /* Ensure navbar stays on top */
+}
+
+/* Style for header */
+h1.header {
+    margin-top: 1cm; /* Add margin to the top of header */
+}
+
+/* Style for fluid container */
+div.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    margin: auto; /* Center the container */
+    padding: 0.25cm;
+    max-height: fit-content; /* Set max height to fit content */
+    max-width: fit-content; /* Set max width to fit content */
+}
+
+/* Media query for screens with a minimum width of 600px */
+@media screen and (min-width: 600px) {
+    /* Style for cards */
+    div.card {
+        margin: 1cm;
+        width: calc(100% - 2cm); /* Calculate width */
+    }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    /* Adjust fluid container for smaller screens */
+    div.container-fluid {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+}
+
+/* Style for card text */
+p.card-text {
+    text-align: justify; /* Justify text */
+}
+
+/* Style for cards */
+div.card {
+    background-color: var(--SideNav); /* Set background color */
+}
